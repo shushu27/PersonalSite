@@ -1,56 +1,147 @@
-@font-face {
-  font-family: 'SansPro';
-  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
-}
-
-* {
-  margin: 0;
-}
-
 html {
   box-sizing: border-box;
-  font-family: 'SansPro';
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
 }
 
 html {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+  color: #747373;
+}
+
+a:hover {
+  color: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+h2 {
+  font-size: 4em;
+  padding: 0 0 2.5rem 0;
+}
+
 .container {
   display: block;
   max-width: 1140px;
   margin: auto;
+  padding: 0 1.5em;
 }
 
 .header {
-  height: 4rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   flex-basis: 90%;
   justify-content: space-between;
 }
 
-.header h1 {
-  font-size: 1.5em;
-}
-
-.main-menu {
-  flex-flow: row;
-}
-
 .main-menu ul {
   display: flex;
+  list-style: none;
 }
 
 .main-menu ul li {
-  list-style: none;
   padding: 0 15 0 15;
+  letter-spacing: 1.5px;
+}
+
+.hero-container {
+  padding: 4rem 0;
+  max-width: 740px;
+}
+
+.hero-container p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.portfolio-container {
+  padding: 0 0 4rem 0;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portfolio-item {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.portfolio-item:hover {
+  box-shadow: rgb(0 0 0 / 19%) 0px 4px 16px -2px;
+  cursor: pointer;
+}
+
+.experience-items {
+  display: flex;
+}
+
+.experience-item {
+  display: flex;
+  border-color: red;
+  margin: 2rem 0;
+}
+
+.experience-name {
+  background: #1e6cb6;
+  color: white;
+  padding: 0.5rem 1rem;
+  min-width: 8rem;
+  text-align: center;
+}
+
+.experience-percentage-wrapper {
+  background: #d4d4d4;
+  width: 100%;
+}
+
+.experience-percentage {
+  background: #73aee6;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: middle;
+}
+
+.experience-percentage p {
+  align-self: flex-end;
+  justify-self: middle;
+  margin: auto 0;
+  padding: 0 1rem 0 0;
+  color: #f7f5f5;
+}
+
+#perc-80 {
+  width: 80%;
+}
+
+#perc-70 {
+  width: 70%;
+}
+
+#perc-60 {
+  width: 60%;
+}
+
+.highlight {
+  color: #1e6cb6;
 }
 
 .cv-download {
