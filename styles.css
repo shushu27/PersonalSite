@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'SansPro';
+  src: url('fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
 * {
   margin: 0;
 }
 
 html {
   box-sizing: border-box;
+  font-family: 'SansPro';
 }
 
 *,
